@@ -55,7 +55,7 @@ class TaskManager :
             my_query = "DELETE FROM Task_table WHERE Task_id = %s"
             val = (task_id,)
             my_Cursor.execute(my_query, val)
-            print(f"{Fore.GREEN}Task {task_id} deleted successfully...")
+            print(f"{Fore.GREEN}Task {task_id} deleted successfully ...")
         elif delete_option == "2":
             my_Cursor.execute("DROP TABLE Task_Table")
             print(f"{Fore.GREEN}Table deleted successfully...")
