@@ -60,7 +60,7 @@ class TaskManager :
             my_Cursor.execute("DROP TABLE Task_Table")
             print(f"{Fore.GREEN}Table deleted successfully...")
         else:
-            print(f"{Fore.YELLOW}Invalid input")
+            print(f"{Fore.YELLOW}Invalid input")  
 
         def set_priority(self):
             task_id = input("Enter the ID of the task to set priority >> ")
