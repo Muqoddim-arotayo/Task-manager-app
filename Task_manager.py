@@ -79,7 +79,7 @@ class TaskManager :
         if update_type not in ["Title", "Description", "Status", "Priority"]:
             print(f"{Fore.YELLOW}\nInvalid column name!")
             self.update_task()
-        else :
+        else : 
             my_query = f"UPDATE Task_Table SET {update_type} = %s WHERE std_id = %s"
             val = ( update_value, update_id)
             my_Cursor.execute(my_query, val)
