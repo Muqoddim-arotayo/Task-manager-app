@@ -70,7 +70,7 @@ class TaskManager :
             print("\n")
         print(tabulate(table, headers=header, tablefmt="fancy_grid"))
         self.display_menu() 
-
+    
 
     def update_task(self):
         update_id = input("\nEnter the Id of the task you want to update >> ")
